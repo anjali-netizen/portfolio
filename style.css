@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(7, 7, 7);
+    color: white;
+    font-family:'poppins',sans-serif;
+}
+.header{
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo{
+    /* margin-top: 20px; */
+    display: flex;
+    justify-content: space-between; 
+    height: 50px;
+    background-color: rgb(53, 51, 51);
+    color: black;
+}
+.logo-text a{
+    font-size: 2rem;
+    color: rgb(179, 14, 47);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 90px;
+    display: inline;
+    text-decoration: none;
+}
+.logo-text a span{
+    font-size: 2rem;
+    color: rgb(248, 245, 245);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+.logo ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+    margin-right: 5rem; 
+    margin-left: 8rem;
+    font-size: 1.3rem; 
+}
+.logo ul a{
+    text-decoration: none;
+    color: white;
+}
+.logo ul a:hover{
+    color: red;
+}
+.detail {
+    display: flex;
+    align-items: center; /* Align items vertically in center */
+}
+
+#left-detail {
+    flex: 1; /* Take remaining space */
+    padding: 20px; /* Padding for inner content */
+    margin-left: 8rem;
+}
+#left-detail h5{
+    font-size: 1.2rem;
+}
+#left-detail h1{
+    font-size: 4rem;
+}
+#left-detail span{
+    color: rgb(233, 32, 32);
+}
+
+#right-detail {
+    margin-left: 10px; /* Space between left and right sections */
+}
+
+#right-detail img {
+    display: block; /* Ensure image doesn't have extra spacing */
+    max-width: 95%; /* Ensure image doesn't exceed container */
+    height: 600px; /* Maintain aspect ratio */
+    margin-top:50px;
+    margin-right: 12rem;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#right-detail img:hover{
+    transform: scale(1.1);
+}
+
+    /* ABOUT */
+
+.row{
+    padding: 30px;
+    display: flex;
+    
+}
+.data1 img{
+   object-fit: cover;
+   padding-left: 60px;
+ 
+}
+.data2{
+    padding-left:50px; 
+    padding-right: 30px;
+}
+.data2 h1{
+    font-size: 3.5rem;
+    color: rgb(233, 32, 32);
+    padding-bottom: 20px;
+
+}
+.data2 p{
+    font-size: 1.3rem;
+    
+}
+.tab-heading{
+    display: flex;
+    margin:35px 0 40px;
+}
+.tab-title{
+    font-size: 1rem;
+    padding-right: 90px;
+    font-weight: 300;
+    cursor: pointer;
+    position: relative;
+    color: rgb(240, 128, 128);
+}
+.tab-title::after{    /* for the animated underline*/
+    content:'';
+    width: 0;   /*to make the underline hidden*/
+    height: 3px;  /*underline ka height*/
+    background: rgb(240, 232, 232);
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+}
+
+.tab-title.active-title:hover::after{
+    width: 40%;    /*length of underline*/
+}
+
+.tab-desc{
+    display: flex;
+}
+.tab-desc ul li{
+   margin-bottom: 10px;
+   list-style: none;
+}
+.tab-desc ul li span{
+    color: rgb(183, 30, 30);
+}
+.tab-content{
+    display: flex;
+    gap: 60px;
+}
+
+ /* PROJECT-SECTION */
+.project-title{
+    margin: 50px 0 50px 150px;   /* T R B L */
+    font-size: 2.1rem;
+}
+.project-title h1 span{
+    color: rgb(210, 18, 18);
+}
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0 0 40px 150px;
+}
+.project{
+    width: 300px;
+    height: 350px;
+    border: 2px solid white;
+    border-radius: 10px;
+    position: relative;   /* to place some thing upon it*/
+    overflow: hidden;
+} 
+.project img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.project-detail{
+    width: 100%;
+    height: 0;
+    position: absolute;  /* to place it upon the image*/
+    background: linear-gradient(rgba(0,0,0,0.6),rgb(205, 3, 3));
+    left: 0;
+    bottom: 0;
+    padding:20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.project-detail h3{
+    padding-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.project-detail p{
+    font-size: 0.85rem;
+}
+.project-detail a{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    color: red;
+    margin: 20px 0;
+    text-decoration: none;
+    text-align: center;
+}
+.project-detail:hover{
+    height:100%;
+}
+
+  /* contact-section */
+  .contact-section{
+    margin: 80px 150px 30px 150px;
+    display: flex;
+    gap: 150px;
+  }
+  .right-section h1{
+    font-size: 3rem;
+    padding-bottom: 20px;
+  }
+  .gmail{
+    margin-bottom: 20px;
+  }
+  .gmail i{
+    font-size: 1.5rem;
+    color: red;
+    padding-right:10px;
+  }
+  .gmail span{
+    font-size: 1.2rem;
+  }
+  .number{
+    margin-bottom: 30px;
+  }
+  .number i{
+    font-size: 1.5rem;
+    color: red;
+    padding-right:10px ;
+  }
+  .number span{
+    font-size: 1.2rem;
+  }
+  .socials ul{
+    display: flex;
+    list-style: none;
+    font-size: 1.3rem;
+    gap: 20px;
+    padding-bottom: 40px;
+  }
+  button{
+    font-size: 1rem;
+    background-color: red;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 80px;
+    cursor: pointer;
+  }
+  button:hover{
+    background-color: white;
+    color: red;
+  }
+  form input{
+    border: none;
+    background-color:rgb(51, 50, 50);
+    color: rgb(160, 156, 156);
+    padding: 15px 35rem 15px 15px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+  }
+  form3 input{
+    border: none;
+    background-color:rgb(51, 50, 50);
+    color: rgb(160, 156, 156);
+    padding: 15px 35rem 15px 15px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+  }
+
+  .footer{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    line-height: 60px;
+    background-color: rgb(82, 79, 79);
+    color: white;
+  }
+
+
+
