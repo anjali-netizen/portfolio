@@ -14,7 +14,6 @@ body{
 }
 
 .logo{
-    /* margin-top: 20px; */
     display: flex;
     justify-content: space-between; 
     height: 50px;
@@ -54,12 +53,12 @@ body{
 }
 .detail {
     display: flex;
-    align-items: center; /* Align items vertically in center */
+    align-items: center; 
 }
 
 #left-detail {
-    flex: 1; /* Take remaining space */
-    padding: 20px; /* Padding for inner content */
+    flex: 1; 
+    padding: 20px; 
     margin-left: 8rem;
 }
 #left-detail h5{
@@ -73,13 +72,13 @@ body{
 }
 
 #right-detail {
-    margin-left: 10px; /* Space between left and right sections */
+    margin-left: 10px; 
 }
 
 #right-detail img {
-    display: block; /* Ensure image doesn't have extra spacing */
-    max-width: 95%; /* Ensure image doesn't exceed container */
-    height: 600px; /* Maintain aspect ratio */
+    display: block; 
+    max-width: 95%; 
+    height: 600px; 
     margin-top:50px;
     margin-right: 12rem;
     border-radius: 50%;
@@ -127,10 +126,10 @@ body{
     position: relative;
     color: rgb(240, 128, 128);
 }
-.tab-title::after{    /* for the animated underline*/
+.tab-title::after{    
     content:'';
-    width: 0;   /*to make the underline hidden*/
-    height: 3px;  /*underline ka height*/
+    width: 0;   
+    height: 3px;  
     background: rgb(240, 232, 232);
     position: absolute;
     left: 0;
@@ -139,7 +138,7 @@ body{
 }
 
 .tab-title.active-title:hover::after{
-    width: 40%;    /*length of underline*/
+    width: 40%;    
 }
 
 .tab-desc{
@@ -159,7 +158,7 @@ body{
 
  /* PROJECT-SECTION */
 .project-title{
-    margin: 50px 0 50px 150px;   /* T R B L */
+    margin: 50px 0 50px 150px;   
     font-size: 2.1rem;
 }
 .project-title h1 span{
@@ -175,7 +174,7 @@ body{
     height: 350px;
     border: 2px solid white;
     border-radius: 10px;
-    position: relative;   /* to place some thing upon it*/
+    position: relative;   
     overflow: hidden;
 } 
 .project img{
@@ -186,7 +185,7 @@ body{
 .project-detail{
     width: 100%;
     height: 0;
-    position: absolute;  /* to place it upon the image*/
+    position: absolute;  
     background: linear-gradient(rgba(0,0,0,0.6),rgb(205, 3, 3));
     left: 0;
     bottom: 0;
